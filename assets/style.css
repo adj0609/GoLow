@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    
 }
 
 
@@ -9,11 +10,17 @@ header nav ul li {
  display: inline-block;
  padding: 8px 10px;
  position: relative;
+width: 100%;
+height: auto;
+position:sticky;
 }
 
 header nav {
 text-align: center;
 padding: 50px 0;
+width: 100%;
+height: auto;
+position: sticky;
 }
 
 header nav ul li a {
@@ -22,6 +29,9 @@ header nav ul li a {
     text-decoration: none;
     font-weight: Bold;
     font-size: 22px;
+    width: 100%;
+    height: auto;
+    position: sticky;
 }
 
 .first_bar{
@@ -42,7 +52,6 @@ header nav ul li a {
 }
 
 .searchsubmit{
-display: inline-block;
 float: left;
 padding-left: 50px;
 border-top: none;
@@ -53,3 +62,38 @@ a:hover{
     
 }
 
+.golow{
+   display: flex;
+   position:inherit;
+   width: 100%;
+   height: auto;
+
+}
+
+.seentv {
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+
+h2:before,
+h2:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 5vw);
+    grid-gap: 15px;
+}
